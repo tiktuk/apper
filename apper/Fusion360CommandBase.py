@@ -98,7 +98,7 @@ class Fusion360CommandBase:
 
         # self.fusion_app.appCommands.append(self)
 
-    def on_preview(self, command: adsk.core.Command, inputs: adsk.core.CommandInputs, args, input_values):
+    def on_preview(self, command: adsk.core.Command, inputs: adsk.core.CommandInputs, args: adsk.core.CommandEventArgs, input_values: dict):
         """Executed when any inputs have changed, will updated the geometry in the graphics window
 
         Code in this function will cause the graphics to refresh.
